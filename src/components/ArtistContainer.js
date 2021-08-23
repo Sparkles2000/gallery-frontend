@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {BASE_URL} from '../constraints/index.js'
+import Artist from './Artist.js'
 
 export default function ArtistContainer() {
 
@@ -16,9 +17,13 @@ useEffect(() => {
     console.log(artists)
 }, [artists])
 
+function populateArtists() {
+    return artists.map(artist => <Artist artist={artist} />)
+}
+
     return (
         <div>
-       
+            {artists && populateArtists()}
         </div>
     )
 }
