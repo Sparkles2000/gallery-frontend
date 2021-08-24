@@ -39,6 +39,7 @@ export default function Artist({artist, deleteArtist, updateArtist}) {
                         </form>
                     </>
                 }
+                <button onClick={toggleEdit}>Toggle Edit Mode</button>
             <br />
         </div>
     )

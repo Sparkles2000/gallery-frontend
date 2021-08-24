@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
-import {BASE_URL} from '../constraints/index.js'
-import Artist from './Artist.js'
+import React, {useEffect, useState} from 'react';
+import {BASE_URL} from '../constraints/index.js';
+import Artist from './Artist.js';
 import ArtistForm from './ArtistForm.js'
 
 export default function ArtistContainer() {
